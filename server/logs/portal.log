@@ -1,0 +1,1578 @@
+2018-04-05 18:44:31-0500 [-] Log opened.
+2018-04-05 18:44:31-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-05 18:44:31-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-05 18:44:31-0500 [-] ServerFactory starting on 4000
+2018-04-05 18:44:31-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-05 18:44:31-0500 [-] Website starting on 80
+2018-04-05 18:44:35-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 53808) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-05 18:51:30-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-05 18:56:14-0500 [-] Received SIGINT, shutting down.
+2018-04-05 18:56:14-0500 [-] (TCP Port 80 Closed)
+2018-04-05 18:56:14-0500 [-] (TCP Port 8308 Closed)
+2018-04-05 18:56:14-0500 [-] (TCP Port 4000 Closed)
+2018-04-05 18:56:14-0500 [-] In connectionLost of webclient
+2018-04-05 18:56:14-0500 [-] Main loop terminated.
+2018-04-05 18:56:14-0500 [-] Server Shut Down.
+2018-04-05 18:56:19-0500 [-] Log opened.
+2018-04-05 18:56:19-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-05 18:56:19-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-05 18:56:19-0500 [-] ServerFactory starting on 4000
+2018-04-05 18:56:19-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-05 18:56:19-0500 [-] Website starting on 80
+2018-04-05 18:56:20-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 53888) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-05 18:56:25-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-05 18:56:37-0500 [-] In connectionLost of webclient
+2018-04-05 18:56:37-0500 [-] In connectionLost of webclient
+2018-04-05 18:56:41-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-05 18:58:21-0500 [-] In connectionLost of webclient
+2018-04-05 19:02:02-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-05 19:06:00-0500 [HTTPChannelWithXForwardedFor,18,174.101.174.61] [::] None
+2018-04-05 19:06:00-0500 [HTTPChannelWithXForwardedFor,18,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-05 19:06:00-0500 [HTTPChannelWithXForwardedFor,18,174.101.174.61] [EE] ]
+2018-04-05 19:06:00-0500 [HTTPChannelWithXForwardedFor,18,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-05 19:06:00-0500 [HTTPChannelWithXForwardedFor,18,174.101.174.61] [::] None
+2018-04-05 19:06:00-0500 [HTTPChannelWithXForwardedFor,18,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-05 19:06:00-0500 [HTTPChannelWithXForwardedFor,18,174.101.174.61] [EE] ]
+2018-04-05 19:06:00-0500 [HTTPChannelWithXForwardedFor,18,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-05 19:06:00-0500 [ProxyClient,client] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/app.py", line 285, in runReactorWithLogging
+	    reactor.run()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1206, in mainLoop
+	    self.doIteration(t)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/epollreactor.py", line 396, in doPoll
+	    log.callWithLogger(selectable, _drdw, selectable, fd, event)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 610, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, inRead)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 252, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 273, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 479, in connectionLost
+	    self._commonConnection.connectionLost(self, reason)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 293, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 477, in connectionLost
+	    self.handleResponseEnd()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/proxy.py", line 87, in handleResponseEnd
+	    self.father.finish()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/server.py", line 224, in finish
+	    return http.Request.finish(self)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 865, in finish
+	    "Request.finish called on a request after its connection was lost; "
+	exceptions.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+2018-04-05 19:10:40-0500 [-] In connectionLost of webclient
+2018-04-05 19:10:40-0500 [-] In connectionLost of webclient
+2018-04-05 19:10:45-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-05 19:57:48-0500 [WebSocketClient (WebSocketProtocol),4,174.101.174.61] Starting RFC 6455 conversation
+2018-04-05 20:02:59-0500 [WebSocketClient (WebSocketProtocol),4,174.101.174.61] Closing connection: '' (1001)
+2018-04-05 20:02:59-0500 [-] In connectionLost of webclient
+2018-04-05 22:11:27-0500 [WebSocketClient (WebSocketProtocol),5,173.217.197.209] Starting RFC 6455 conversation
+2018-04-05 22:14:14-0500 [WebSocketClient (WebSocketProtocol),6,173.217.197.209] Starting RFC 6455 conversation
+2018-04-05 22:16:23-0500 [-] In connectionLost of webclient
+2018-04-05 22:16:23-0500 [-] In connectionLost of webclient
+2018-04-05 22:28:06-0500 [-] In connectionLost of webclient
+2018-04-05 22:28:06-0500 [-] In connectionLost of webclient
+2018-04-05 23:29:02-0500 [-] In connectionLost of webclient
+2018-04-05 23:29:02-0500 [-] In connectionLost of webclient
+2018-04-06 00:15:08-0500 [WebSocketClient (WebSocketProtocol),7,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:17:21-0500 [-] Received SIGINT, shutting down.
+2018-04-06 00:17:21-0500 [-] (TCP Port 80 Closed)
+2018-04-06 00:17:21-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 00:17:21-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 00:17:21-0500 [-] In connectionLost of webclient
+2018-04-06 00:17:21-0500 [-] Main loop terminated.
+2018-04-06 00:17:21-0500 [-] Server Shut Down.
+2018-04-06 00:17:29-0500 [-] Log opened.
+2018-04-06 00:17:29-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 00:17:29-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 00:17:29-0500 [-] ServerFactory starting on 4000
+2018-04-06 00:17:29-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 00:17:29-0500 [-] Website starting on 80
+2018-04-06 00:17:30-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54188) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 00:17:39-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:18:48-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:19:45-0500 [-] Received SIGINT, shutting down.
+2018-04-06 00:19:45-0500 [-] (TCP Port 80 Closed)
+2018-04-06 00:19:45-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 00:19:45-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 00:19:45-0500 [-] In connectionLost of webclient
+2018-04-06 00:19:45-0500 [-] In connectionLost of webclient
+2018-04-06 00:19:45-0500 [-] Main loop terminated.
+2018-04-06 00:19:45-0500 [-] Server Shut Down.
+2018-04-06 00:19:51-0500 [-] Log opened.
+2018-04-06 00:19:51-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 00:19:51-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 00:19:51-0500 [-] ServerFactory starting on 4000
+2018-04-06 00:19:51-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 00:19:51-0500 [-] Website starting on 80
+2018-04-06 00:19:53-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54224) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 00:41:47-0500 [-] Received SIGINT, shutting down.
+2018-04-06 00:41:47-0500 [-] (TCP Port 80 Closed)
+2018-04-06 00:41:47-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 00:41:47-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 00:41:47-0500 [-] Main loop terminated.
+2018-04-06 00:41:47-0500 [-] Server Shut Down.
+2018-04-06 00:41:52-0500 [-] Log opened.
+2018-04-06 00:41:52-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 00:41:52-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 00:41:52-0500 [-] ServerFactory starting on 4000
+2018-04-06 00:41:52-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 00:41:52-0500 [-] Website starting on 80
+2018-04-06 00:41:54-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54236) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 00:42:02-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:42:02-0500 [AMPProtocol,client] [EE] AMP Error for AdminPortal2Server: global name 'get_account_from_uid' is not defined
+2018-04-06 00:42:10-0500 [-] In connectionLost of webclient
+2018-04-06 00:42:10-0500 [-] In connectionLost of webclient
+2018-04-06 00:42:13-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:42:38-0500 [-] In connectionLost of webclient
+2018-04-06 00:42:38-0500 [-] In connectionLost of webclient
+2018-04-06 00:42:41-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:43:38-0500 [-] Received SIGINT, shutting down.
+2018-04-06 00:43:38-0500 [-] (TCP Port 80 Closed)
+2018-04-06 00:43:38-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 00:43:38-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 00:43:38-0500 [-] In connectionLost of webclient
+2018-04-06 00:43:38-0500 [-] Main loop terminated.
+2018-04-06 00:43:38-0500 [-] Server Shut Down.
+2018-04-06 00:43:43-0500 [-] Log opened.
+2018-04-06 00:43:43-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 00:43:43-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 00:43:43-0500 [-] ServerFactory starting on 4000
+2018-04-06 00:43:43-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 00:43:43-0500 [-] Website starting on 80
+2018-04-06 00:43:44-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54252) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 00:43:56-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:44:02-0500 [-] In connectionLost of webclient
+2018-04-06 00:44:02-0500 [-] In connectionLost of webclient
+2018-04-06 00:44:05-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:53:04-0500 [-] Received SIGINT, shutting down.
+2018-04-06 00:53:04-0500 [-] (TCP Port 80 Closed)
+2018-04-06 00:53:04-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 00:53:04-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 00:53:04-0500 [-] In connectionLost of webclient
+2018-04-06 00:53:04-0500 [-] Main loop terminated.
+2018-04-06 00:53:04-0500 [-] Server Shut Down.
+2018-04-06 00:53:09-0500 [-] Log opened.
+2018-04-06 00:53:09-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 00:53:09-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 00:53:09-0500 [-] ServerFactory starting on 4000
+2018-04-06 00:53:09-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 00:53:09-0500 [-] Website starting on 80
+2018-04-06 00:53:11-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54262) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 00:53:19-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:53:19-0500 [AMPProtocol,client] [EE] AMP Error for AdminPortal2Server: global name 'evennia' is not defined
+2018-04-06 00:54:10-0500 [-] Received SIGINT, shutting down.
+2018-04-06 00:54:10-0500 [-] (TCP Port 80 Closed)
+2018-04-06 00:54:10-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 00:54:10-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 00:54:10-0500 [-] In connectionLost of webclient
+2018-04-06 00:54:10-0500 [-] Main loop terminated.
+2018-04-06 00:54:10-0500 [-] Server Shut Down.
+2018-04-06 00:54:15-0500 [-] Log opened.
+2018-04-06 00:54:15-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 00:54:15-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 00:54:15-0500 [-] ServerFactory starting on 4000
+2018-04-06 00:54:15-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 00:54:15-0500 [-] Website starting on 80
+2018-04-06 00:54:17-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54280) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 00:54:21-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 00:54:21-0500 [AMPProtocol,client] [EE] AMP Error for AdminPortal2Server: global name 'evennia' is not defined
+2018-04-06 00:54:58-0500 [-] Received SIGINT, shutting down.
+2018-04-06 00:54:58-0500 [-] (TCP Port 80 Closed)
+2018-04-06 00:54:58-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 00:54:58-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 00:54:58-0500 [-] In connectionLost of webclient
+2018-04-06 00:54:58-0500 [-] Main loop terminated.
+2018-04-06 00:54:58-0500 [-] Server Shut Down.
+2018-04-06 00:55:18-0500 [-] Log opened.
+2018-04-06 00:55:18-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 00:55:18-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 00:55:18-0500 [-] ServerFactory starting on 4000
+2018-04-06 00:55:18-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 00:55:18-0500 [-] Website starting on 80
+2018-04-06 00:55:20-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54288) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 00:55:29-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:07:10-0500 [-] Received SIGINT, shutting down.
+2018-04-06 01:07:10-0500 [-] (TCP Port 80 Closed)
+2018-04-06 01:07:10-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 01:07:10-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 01:07:10-0500 [-] In connectionLost of webclient
+2018-04-06 01:07:10-0500 [-] Main loop terminated.
+2018-04-06 01:07:10-0500 [-] Server Shut Down.
+2018-04-06 01:07:15-0500 [-] Log opened.
+2018-04-06 01:07:15-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 01:07:15-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 01:07:15-0500 [-] ServerFactory starting on 4000
+2018-04-06 01:07:15-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 01:07:15-0500 [-] Website starting on 80
+2018-04-06 01:07:17-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54302) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 01:07:24-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:07:24-0500 [AMPProtocol,client] [EE] AMP Error for AdminPortal2Server: global name 'evennia' is not defined
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [::] None
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] ]
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [::] None
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] ]
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [::] None
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] ]
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [::] None
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] ]
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [::] None
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] ]
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,10,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 01:07:51-0500 [ProxyClient,client] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 578, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 525, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/proxy.py", line 87, in handleResponseEnd
+	    self.father.finish()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/server.py", line 224, in finish
+	    return http.Request.finish(self)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 865, in finish
+	    "Request.finish called on a request after its connection was lost; "
+	exceptions.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [::] None
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] ]
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [::] None
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] ]
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [::] None
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] ]
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [::] None
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] ]
+2018-04-06 01:07:51-0500 [HTTPChannelWithXForwardedFor,12,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 01:07:51-0500 [ProxyClient,client] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 578, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 525, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/proxy.py", line 87, in handleResponseEnd
+	    self.father.finish()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/server.py", line 224, in finish
+	    return http.Request.finish(self)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 865, in finish
+	    "Request.finish called on a request after its connection was lost; "
+	exceptions.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+2018-04-06 01:07:51-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:07:51-0500 [-] In connectionLost of webclient
+2018-04-06 01:07:51-0500 [AMPProtocol,client] [EE] AMP Error for AdminPortal2Server: global name 'evennia' is not defined
+2018-04-06 01:07:51-0500 [-] In connectionLost of webclient
+2018-04-06 01:07:59-0500 [-] In connectionLost of webclient
+2018-04-06 01:07:59-0500 [-] In connectionLost of webclient
+2018-04-06 01:08:02-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:08:57-0500 [-] Received SIGINT, shutting down.
+2018-04-06 01:08:57-0500 [-] (TCP Port 80 Closed)
+2018-04-06 01:08:57-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 01:08:57-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 01:08:57-0500 [-] In connectionLost of webclient
+2018-04-06 01:08:57-0500 [-] Main loop terminated.
+2018-04-06 01:08:57-0500 [-] Server Shut Down.
+2018-04-06 01:09:03-0500 [-] Log opened.
+2018-04-06 01:09:03-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 01:09:03-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 01:09:03-0500 [-] ServerFactory starting on 4000
+2018-04-06 01:09:03-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 01:09:03-0500 [-] Website starting on 80
+2018-04-06 01:09:04-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54340) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 01:09:10-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:10:05-0500 [-] Received SIGINT, shutting down.
+2018-04-06 01:10:05-0500 [-] (TCP Port 80 Closed)
+2018-04-06 01:10:05-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 01:10:05-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 01:10:05-0500 [-] In connectionLost of webclient
+2018-04-06 01:10:05-0500 [-] Main loop terminated.
+2018-04-06 01:10:05-0500 [-] Server Shut Down.
+2018-04-06 01:10:11-0500 [-] Log opened.
+2018-04-06 01:10:11-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 01:10:11-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 01:10:11-0500 [-] ServerFactory starting on 4000
+2018-04-06 01:10:11-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 01:10:11-0500 [-] Website starting on 80
+2018-04-06 01:10:12-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54350) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 01:10:18-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:10:18-0500 [AMPProtocol,client] [EE] AMP Error for AdminPortal2Server: 'QuerySet' object has no attribute 'caller'
+2018-04-06 01:10:27-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:10:27-0500 [-] In connectionLost of webclient
+2018-04-06 01:10:27-0500 [AMPProtocol,client] [EE] AMP Error for AdminPortal2Server: 'QuerySet' object has no attribute 'caller'
+2018-04-06 01:10:27-0500 [-] In connectionLost of webclient
+2018-04-06 01:10:35-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:12:54-0500 [-] Received SIGINT, shutting down.
+2018-04-06 01:12:54-0500 [-] (TCP Port 80 Closed)
+2018-04-06 01:12:54-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 01:12:54-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 01:12:54-0500 [-] In connectionLost of webclient
+2018-04-06 01:12:54-0500 [-] In connectionLost of webclient
+2018-04-06 01:12:54-0500 [-] Main loop terminated.
+2018-04-06 01:12:54-0500 [-] Server Shut Down.
+2018-04-06 01:12:59-0500 [-] Log opened.
+2018-04-06 01:12:59-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 01:12:59-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 01:12:59-0500 [-] ServerFactory starting on 4000
+2018-04-06 01:12:59-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 01:12:59-0500 [-] Website starting on 80
+2018-04-06 01:13:00-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54360) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 01:26:13-0500 [-] Received SIGINT, shutting down.
+2018-04-06 01:26:13-0500 [-] (TCP Port 80 Closed)
+2018-04-06 01:26:13-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 01:26:13-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 01:26:13-0500 [-] Main loop terminated.
+2018-04-06 01:26:13-0500 [-] Server Shut Down.
+2018-04-06 01:26:17-0500 [-] Log opened.
+2018-04-06 01:26:17-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 01:26:17-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 01:26:17-0500 [-] ServerFactory starting on 4000
+2018-04-06 01:26:17-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 01:26:17-0500 [-] Website starting on 80
+2018-04-06 01:26:19-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54366) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 01:26:27-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:26:47-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:28:02-0500 [-] Received SIGINT, shutting down.
+2018-04-06 01:28:02-0500 [-] (TCP Port 80 Closed)
+2018-04-06 01:28:02-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 01:28:02-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 01:28:02-0500 [-] In connectionLost of webclient
+2018-04-06 01:28:02-0500 [-] In connectionLost of webclient
+2018-04-06 01:28:02-0500 [-] Main loop terminated.
+2018-04-06 01:28:02-0500 [-] Server Shut Down.
+2018-04-06 01:28:08-0500 [-] Log opened.
+2018-04-06 01:28:08-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 01:28:08-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 01:28:08-0500 [-] ServerFactory starting on 4000
+2018-04-06 01:28:08-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 01:28:08-0500 [-] Website starting on 80
+2018-04-06 01:28:09-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54402) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 01:28:20-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:28:25-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:34:57-0500 [-] Received SIGINT, shutting down.
+2018-04-06 01:34:57-0500 [-] (TCP Port 80 Closed)
+2018-04-06 01:34:57-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 01:34:57-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 01:34:57-0500 [-] In connectionLost of webclient
+2018-04-06 01:34:57-0500 [-] In connectionLost of webclient
+2018-04-06 01:34:57-0500 [-] Main loop terminated.
+2018-04-06 01:34:57-0500 [-] Server Shut Down.
+2018-04-06 01:35:03-0500 [-] Log opened.
+2018-04-06 01:35:03-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 01:35:03-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 01:35:03-0500 [-] ServerFactory starting on 4000
+2018-04-06 01:35:03-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 01:35:03-0500 [-] Website starting on 80
+2018-04-06 01:35:04-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54414) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 01:35:12-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:42:20-0500 [-] Received SIGINT, shutting down.
+2018-04-06 01:42:20-0500 [-] (TCP Port 80 Closed)
+2018-04-06 01:42:20-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 01:42:20-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 01:42:20-0500 [-] In connectionLost of webclient
+2018-04-06 01:42:20-0500 [-] Main loop terminated.
+2018-04-06 01:42:20-0500 [-] Server Shut Down.
+2018-04-06 01:42:25-0500 [-] Log opened.
+2018-04-06 01:42:25-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 01:42:25-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 01:42:25-0500 [-] ServerFactory starting on 4000
+2018-04-06 01:42:25-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 01:42:25-0500 [-] Website starting on 80
+2018-04-06 01:42:27-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54452) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 01:43:41-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:43:47-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:47:26-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:47:26-0500 [-] In connectionLost of webclient
+2018-04-06 01:47:26-0500 [-] In connectionLost of webclient
+2018-04-06 01:47:41-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:47:41-0500 [-] In connectionLost of webclient
+2018-04-06 01:47:41-0500 [-] In connectionLost of webclient
+2018-04-06 01:47:47-0500 [WebSocketClient (WebSocketProtocol),4,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:47:47-0500 [-] In connectionLost of webclient
+2018-04-06 01:47:47-0500 [-] In connectionLost of webclient
+2018-04-06 01:47:49-0500 [-] In connectionLost of webclient
+2018-04-06 01:47:49-0500 [-] In connectionLost of webclient
+2018-04-06 01:47:59-0500 [WebSocketClient (WebSocketProtocol),5,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:48:24-0500 [WebSocketClient (WebSocketProtocol),6,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 01:48:24-0500 [-] In connectionLost of webclient
+2018-04-06 01:48:24-0500 [-] In connectionLost of webclient
+2018-04-06 01:48:48-0500 [WebSocketClient (WebSocketProtocol),7,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 04:26:35-0500 [WebSocketClient (WebSocketProtocol),8,106.71.164.163] Starting RFC 6455 conversation
+2018-04-06 04:26:58-0500 [-] In connectionLost of webclient
+2018-04-06 04:26:58-0500 [-] In connectionLost of webclient
+2018-04-06 04:55:51-0500 [WebSocketClient (WebSocketProtocol),9,107.185.179.112] Starting RFC 6455 conversation
+2018-04-06 04:55:59-0500 [-] In connectionLost of webclient
+2018-04-06 04:55:59-0500 [-] In connectionLost of webclient
+2018-04-06 04:57:42-0500 [WebSocketClient (WebSocketProtocol),10,107.185.179.112] Starting RFC 6455 conversation
+2018-04-06 04:57:46-0500 [-] In connectionLost of webclient
+2018-04-06 04:57:46-0500 [-] In connectionLost of webclient
+2018-04-06 07:58:54-0500 [TelnetProtocol,2,84.13.59.219] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 538, in dataReceived
+	    raise ValueError("Stumped", b)
+	exceptions.ValueError: ('Stumped', '\x01')
+	
+2018-04-06 08:00:08-0500 [TelnetProtocol,5,84.13.59.219] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 538, in dataReceived
+	    raise ValueError("Stumped", b)
+	exceptions.ValueError: ('Stumped', '\x01')
+	
+2018-04-06 08:12:36-0500 [TelnetProtocol,6,5.79.69.142] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 538, in dataReceived
+	    raise ValueError("Stumped", b)
+	exceptions.ValueError: ('Stumped', '\x01')
+	
+2018-04-06 08:31:05-0500 [-] Unhandled error in Deferred:
+2018-04-06 08:31:05-0500 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 632, in telnet_WILL
+	    self.willMap[s.him.state, s.him.negotiating](self, s, option)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 648, in will_no_true
+	    d.callback(True)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 393, in callback
+	    self._startRunCallbacks(result)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 501, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 588, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/root/mud/evennia/evennia/server/portal/ttype.py", line 107, in will_ttype
+	    clientname = option.upper()
+	exceptions.AttributeError: 'bool' object has no attribute 'upper'
+	
+2018-04-06 08:32:03-0500 [TelnetProtocol,8,84.13.59.219] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 538, in dataReceived
+	    raise ValueError("Stumped", b)
+	exceptions.ValueError: ('Stumped', '\x01')
+	
+2018-04-06 12:38:20-0500 [-] Received SIGINT, shutting down.
+2018-04-06 12:38:20-0500 [-] (TCP Port 80 Closed)
+2018-04-06 12:38:20-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 12:38:20-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 12:38:20-0500 [-] In connectionLost of webclient
+2018-04-06 12:38:20-0500 [-] In connectionLost of webclient
+2018-04-06 12:38:20-0500 [-] In connectionLost of webclient
+2018-04-06 12:38:20-0500 [-] Main loop terminated.
+2018-04-06 12:38:20-0500 [-] Server Shut Down.
+2018-04-06 12:38:25-0500 [-] Log opened.
+2018-04-06 12:38:25-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 12:38:25-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 12:38:25-0500 [-] ServerFactory starting on 4000
+2018-04-06 12:38:25-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 12:38:25-0500 [-] Website starting on 80
+2018-04-06 12:38:26-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 54986) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 12:38:45-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:39:10-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:39:25-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:40:20-0500 [-] In connectionLost of webclient
+2018-04-06 12:40:20-0500 [-] In connectionLost of webclient
+2018-04-06 12:43:37-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [::] None
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] ]
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [::] None
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] ]
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [::] None
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] ]
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [::] None
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] ]
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [::] None
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] ]
+2018-04-06 12:43:37-0500 [HTTPChannelWithXForwardedFor,14,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:43:37-0500 [ProxyClient,client] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 578, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 525, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/proxy.py", line 87, in handleResponseEnd
+	    self.father.finish()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/server.py", line 224, in finish
+	    return http.Request.finish(self)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 865, in finish
+	    "Request.finish called on a request after its connection was lost; "
+	exceptions.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+2018-04-06 12:51:11-0500 [-] Received SIGINT, shutting down.
+2018-04-06 12:51:11-0500 [-] (TCP Port 80 Closed)
+2018-04-06 12:51:11-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 12:51:11-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 12:51:11-0500 [-] In connectionLost of webclient
+2018-04-06 12:51:11-0500 [-] In connectionLost of webclient
+2018-04-06 12:51:11-0500 [-] In connectionLost of webclient
+2018-04-06 12:51:11-0500 [-] Main loop terminated.
+2018-04-06 12:51:11-0500 [-] Server Shut Down.
+2018-04-06 12:51:16-0500 [-] Log opened.
+2018-04-06 12:51:16-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 12:51:16-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 12:51:16-0500 [-] ServerFactory starting on 4000
+2018-04-06 12:51:16-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 12:51:16-0500 [-] Website starting on 80
+2018-04-06 12:51:18-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55038) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 12:51:25-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:51:44-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:51:57-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:53:21-0500 [-] In connectionLost of webclient
+2018-04-06 12:53:21-0500 [-] In connectionLost of webclient
+2018-04-06 12:53:25-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [::] None
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] ]
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [::] None
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] ]
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [::] None
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] ]
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [::] None
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] ]
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [::] None
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] ]
+2018-04-06 12:53:26-0500 [HTTPChannelWithXForwardedFor,8,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 12:53:26-0500 [ProxyClient,client] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 578, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 525, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/proxy.py", line 87, in handleResponseEnd
+	    self.father.finish()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/server.py", line 224, in finish
+	    return http.Request.finish(self)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 865, in finish
+	    "Request.finish called on a request after its connection was lost; "
+	exceptions.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+2018-04-06 12:55:38-0500 [-] Received SIGINT, shutting down.
+2018-04-06 12:55:38-0500 [-] (TCP Port 80 Closed)
+2018-04-06 12:55:38-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 12:55:38-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 12:55:38-0500 [-] In connectionLost of webclient
+2018-04-06 12:55:38-0500 [-] In connectionLost of webclient
+2018-04-06 12:55:38-0500 [-] In connectionLost of webclient
+2018-04-06 12:55:38-0500 [-] Main loop terminated.
+2018-04-06 12:55:38-0500 [-] Server Shut Down.
+2018-04-06 12:55:43-0500 [-] Log opened.
+2018-04-06 12:55:43-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 12:55:43-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 12:55:43-0500 [-] ServerFactory starting on 4000
+2018-04-06 12:55:43-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 12:55:43-0500 [-] Website starting on 80
+2018-04-06 12:55:44-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55068) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 12:55:58-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:56:08-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:56:22-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 12:56:29-0500 [-] In connectionLost of webclient
+2018-04-06 12:56:29-0500 [-] In connectionLost of webclient
+2018-04-06 13:08:37-0500 [-] Received SIGINT, shutting down.
+2018-04-06 13:08:37-0500 [-] (TCP Port 80 Closed)
+2018-04-06 13:08:37-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 13:08:37-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 13:08:37-0500 [-] In connectionLost of webclient
+2018-04-06 13:08:37-0500 [-] In connectionLost of webclient
+2018-04-06 13:08:37-0500 [-] Main loop terminated.
+2018-04-06 13:08:37-0500 [-] Server Shut Down.
+2018-04-06 13:08:42-0500 [-] Log opened.
+2018-04-06 13:08:42-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 13:08:42-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 13:08:42-0500 [-] ServerFactory starting on 4000
+2018-04-06 13:08:42-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 13:08:42-0500 [-] Website starting on 80
+2018-04-06 13:08:44-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55080) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 13:08:56-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:09:09-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:09:15-0500 [-] In connectionLost of webclient
+2018-04-06 13:09:20-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:09:33-0500 [-] In connectionLost of webclient
+2018-04-06 13:09:33-0500 [-] In connectionLost of webclient
+2018-04-06 13:16:41-0500 [-] Received SIGINT, shutting down.
+2018-04-06 13:16:41-0500 [-] (TCP Port 80 Closed)
+2018-04-06 13:16:41-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 13:16:41-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 13:16:41-0500 [-] In connectionLost of webclient
+2018-04-06 13:16:41-0500 [-] In connectionLost of webclient
+2018-04-06 13:16:41-0500 [-] Main loop terminated.
+2018-04-06 13:16:41-0500 [-] Server Shut Down.
+2018-04-06 13:16:46-0500 [-] Log opened.
+2018-04-06 13:16:46-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 13:16:46-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 13:16:46-0500 [-] ServerFactory starting on 4000
+2018-04-06 13:16:46-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 13:16:46-0500 [-] Website starting on 80
+2018-04-06 13:16:47-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55092) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 13:17:15-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:17:42-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:17:48-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Closing connection: '' (1001)
+2018-04-06 13:17:48-0500 [-] In connectionLost of webclient
+2018-04-06 13:17:51-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:17:59-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:18:12-0500 [-] In connectionLost of webclient
+2018-04-06 13:18:12-0500 [-] In connectionLost of webclient
+2018-04-06 13:24:56-0500 [-] Received SIGINT, shutting down.
+2018-04-06 13:24:56-0500 [-] (TCP Port 80 Closed)
+2018-04-06 13:24:56-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 13:24:56-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 13:24:56-0500 [-] In connectionLost of webclient
+2018-04-06 13:24:56-0500 [-] In connectionLost of webclient
+2018-04-06 13:24:56-0500 [-] Main loop terminated.
+2018-04-06 13:24:56-0500 [-] Server Shut Down.
+2018-04-06 13:25:01-0500 [-] Log opened.
+2018-04-06 13:25:01-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 13:25:01-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 13:25:01-0500 [-] ServerFactory starting on 4000
+2018-04-06 13:25:01-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 13:25:01-0500 [-] Website starting on 80
+2018-04-06 13:25:03-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55126) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 13:25:16-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:25:26-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:25:46-0500 [-] In connectionLost of webclient
+2018-04-06 13:25:46-0500 [-] In connectionLost of webclient
+2018-04-06 13:27:05-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [::] None
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] ]
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [::] None
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] ]
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [::] None
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] ]
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [::] None
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] ]
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [::] None
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] ]
+2018-04-06 13:27:20-0500 [HTTPChannelWithXForwardedFor,5,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 13:27:20-0500 [ProxyClient,client] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 578, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 525, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/proxy.py", line 87, in handleResponseEnd
+	    self.father.finish()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/server.py", line 224, in finish
+	    return http.Request.finish(self)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 865, in finish
+	    "Request.finish called on a request after its connection was lost; "
+	exceptions.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+2018-04-06 13:27:20-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:27:20-0500 [-] In connectionLost of webclient
+2018-04-06 13:27:20-0500 [-] In connectionLost of webclient
+2018-04-06 13:27:28-0500 [WebSocketClient (WebSocketProtocol),4,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:27:28-0500 [-] In connectionLost of webclient
+2018-04-06 13:27:28-0500 [-] In connectionLost of webclient
+2018-04-06 13:27:43-0500 [WebSocketClient (WebSocketProtocol),5,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:30:39-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55182) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 13:47:58-0500 [-] Received SIGINT, shutting down.
+2018-04-06 13:47:58-0500 [-] (TCP Port 80 Closed)
+2018-04-06 13:47:58-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 13:47:58-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 13:47:58-0500 [-] In connectionLost of webclient
+2018-04-06 13:47:58-0500 [-] In connectionLost of webclient
+2018-04-06 13:47:58-0500 [-] In connectionLost of webclient
+2018-04-06 13:47:58-0500 [-] Main loop terminated.
+2018-04-06 13:47:58-0500 [-] Server Shut Down.
+2018-04-06 13:48:03-0500 [-] Log opened.
+2018-04-06 13:48:03-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 13:48:03-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 13:48:03-0500 [-] ServerFactory starting on 4000
+2018-04-06 13:48:03-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 13:48:03-0500 [-] Website starting on 80
+2018-04-06 13:48:04-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55320) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 13:48:19-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:48:25-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:48:28-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:49:01-0500 [-] Received SIGINT, shutting down.
+2018-04-06 13:49:01-0500 [-] (TCP Port 80 Closed)
+2018-04-06 13:49:01-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 13:49:01-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 13:49:01-0500 [-] In connectionLost of webclient
+2018-04-06 13:49:01-0500 [-] In connectionLost of webclient
+2018-04-06 13:49:01-0500 [-] In connectionLost of webclient
+2018-04-06 13:49:01-0500 [-] Main loop terminated.
+2018-04-06 13:49:01-0500 [-] Server Shut Down.
+2018-04-06 13:49:05-0500 [-] Log opened.
+2018-04-06 13:49:05-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 13:49:05-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 13:49:05-0500 [-] ServerFactory starting on 4000
+2018-04-06 13:49:05-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 13:49:05-0500 [-] Website starting on 80
+2018-04-06 13:49:07-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55332) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 13:49:10-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:49:19-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:49:23-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:49:23-0500 [-] In connectionLost of webclient
+2018-04-06 13:49:23-0500 [-] In connectionLost of webclient
+2018-04-06 13:49:30-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:51:49-0500 [-] Received SIGINT, shutting down.
+2018-04-06 13:51:49-0500 [-] (TCP Port 80 Closed)
+2018-04-06 13:51:49-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 13:51:49-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 13:51:49-0500 [-] In connectionLost of webclient
+2018-04-06 13:51:49-0500 [-] In connectionLost of webclient
+2018-04-06 13:51:49-0500 [-] In connectionLost of webclient
+2018-04-06 13:51:49-0500 [-] Main loop terminated.
+2018-04-06 13:51:49-0500 [-] Server Shut Down.
+2018-04-06 13:51:54-0500 [-] Log opened.
+2018-04-06 13:51:54-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 13:51:54-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 13:51:54-0500 [-] ServerFactory starting on 4000
+2018-04-06 13:51:54-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 13:51:54-0500 [-] Website starting on 80
+2018-04-06 13:51:56-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55356) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 13:52:02-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:52:05-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:52:08-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Closing connection: '' (1001)
+2018-04-06 13:52:08-0500 [-] In connectionLost of webclient
+2018-04-06 13:52:08-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:52:24-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 13:54:07-0500 [-] In connectionLost of webclient
+2018-04-06 13:54:07-0500 [-] In connectionLost of webclient
+2018-04-06 13:56:04-0500 [WebSocketClient (WebSocketProtocol),4,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:03:42-0500 [-] Received SIGINT, shutting down.
+2018-04-06 14:03:42-0500 [-] (TCP Port 80 Closed)
+2018-04-06 14:03:42-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 14:03:42-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 14:03:42-0500 [-] In connectionLost of webclient
+2018-04-06 14:03:42-0500 [-] In connectionLost of webclient
+2018-04-06 14:03:42-0500 [-] In connectionLost of webclient
+2018-04-06 14:03:42-0500 [-] Main loop terminated.
+2018-04-06 14:03:42-0500 [-] Server Shut Down.
+2018-04-06 14:03:53-0500 [-] Log opened.
+2018-04-06 14:03:53-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 14:03:53-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 14:03:53-0500 [-] ServerFactory starting on 4000
+2018-04-06 14:03:53-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 14:03:53-0500 [-] Website starting on 80
+2018-04-06 14:03:55-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55370) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 14:04:05-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:04:11-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:04:18-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:04:43-0500 [-] In connectionLost of webclient
+2018-04-06 14:04:43-0500 [-] In connectionLost of webclient
+2018-04-06 14:11:19-0500 [-] Received SIGINT, shutting down.
+2018-04-06 14:11:19-0500 [-] (TCP Port 80 Closed)
+2018-04-06 14:11:19-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 14:11:19-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 14:11:19-0500 [-] In connectionLost of webclient
+2018-04-06 14:11:19-0500 [-] In connectionLost of webclient
+2018-04-06 14:11:19-0500 [-] Main loop terminated.
+2018-04-06 14:11:19-0500 [-] Server Shut Down.
+2018-04-06 14:11:24-0500 [-] Log opened.
+2018-04-06 14:11:24-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 14:11:24-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 14:11:24-0500 [-] ServerFactory starting on 4000
+2018-04-06 14:11:24-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 14:11:24-0500 [-] Website starting on 80
+2018-04-06 14:11:25-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55440) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 14:11:34-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:12:25-0500 [-] Received SIGINT, shutting down.
+2018-04-06 14:12:25-0500 [-] (TCP Port 80 Closed)
+2018-04-06 14:12:25-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 14:12:25-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 14:12:25-0500 [-] In connectionLost of webclient
+2018-04-06 14:12:25-0500 [-] Main loop terminated.
+2018-04-06 14:12:25-0500 [-] Server Shut Down.
+2018-04-06 14:12:29-0500 [-] Log opened.
+2018-04-06 14:12:29-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 14:12:29-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 14:12:29-0500 [-] ServerFactory starting on 4000
+2018-04-06 14:12:29-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 14:12:29-0500 [-] Website starting on 80
+2018-04-06 14:12:31-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55448) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 14:12:40-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:13:44-0500 [-] Received SIGINT, shutting down.
+2018-04-06 14:13:44-0500 [-] (TCP Port 80 Closed)
+2018-04-06 14:13:44-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 14:13:44-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 14:13:44-0500 [-] In connectionLost of webclient
+2018-04-06 14:13:44-0500 [-] Main loop terminated.
+2018-04-06 14:13:44-0500 [-] Server Shut Down.
+2018-04-06 14:13:55-0500 [-] Log opened.
+2018-04-06 14:13:55-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 14:13:55-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 14:13:55-0500 [-] ServerFactory starting on 4000
+2018-04-06 14:13:55-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 14:13:55-0500 [-] Website starting on 80
+2018-04-06 14:13:56-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55456) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 14:14:04-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:14:08-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:16:04-0500 [-] Received SIGINT, shutting down.
+2018-04-06 14:16:04-0500 [-] (TCP Port 80 Closed)
+2018-04-06 14:16:04-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 14:16:04-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 14:16:04-0500 [-] In connectionLost of webclient
+2018-04-06 14:16:04-0500 [-] In connectionLost of webclient
+2018-04-06 14:16:04-0500 [-] Main loop terminated.
+2018-04-06 14:16:04-0500 [-] Server Shut Down.
+2018-04-06 14:16:10-0500 [-] Log opened.
+2018-04-06 14:16:10-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 14:16:10-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 14:16:10-0500 [-] ServerFactory starting on 4000
+2018-04-06 14:16:10-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 14:16:10-0500 [-] Website starting on 80
+2018-04-06 14:16:12-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55472) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 14:16:22-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:16:31-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:16:36-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:16:42-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:16:42-0500 [-] In connectionLost of webclient
+2018-04-06 14:16:42-0500 [-] In connectionLost of webclient
+2018-04-06 14:20:28-0500 [-] Received SIGINT, shutting down.
+2018-04-06 14:20:28-0500 [-] (TCP Port 80 Closed)
+2018-04-06 14:20:28-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 14:20:28-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 14:20:28-0500 [-] In connectionLost of webclient
+2018-04-06 14:20:28-0500 [-] In connectionLost of webclient
+2018-04-06 14:20:28-0500 [-] In connectionLost of webclient
+2018-04-06 14:20:28-0500 [-] Main loop terminated.
+2018-04-06 14:20:28-0500 [-] Server Shut Down.
+2018-04-06 14:20:34-0500 [-] Log opened.
+2018-04-06 14:20:34-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 14:20:34-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 14:20:34-0500 [-] ServerFactory starting on 4000
+2018-04-06 14:20:34-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 14:20:34-0500 [-] Website starting on 80
+2018-04-06 14:20:35-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55486) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 14:20:52-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:20:56-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:21:38-0500 [-] Received SIGINT, shutting down.
+2018-04-06 14:21:38-0500 [-] (TCP Port 80 Closed)
+2018-04-06 14:21:38-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 14:21:38-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 14:21:38-0500 [-] In connectionLost of webclient
+2018-04-06 14:21:38-0500 [-] In connectionLost of webclient
+2018-04-06 14:21:38-0500 [-] Main loop terminated.
+2018-04-06 14:21:38-0500 [-] Server Shut Down.
+2018-04-06 14:21:43-0500 [-] Log opened.
+2018-04-06 14:21:43-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 14:21:43-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 14:21:43-0500 [-] ServerFactory starting on 4000
+2018-04-06 14:21:43-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 14:21:43-0500 [-] Website starting on 80
+2018-04-06 14:21:45-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55492) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 14:21:52-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:22:08-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:22:08-0500 [-] In connectionLost of webclient
+2018-04-06 14:22:08-0500 [-] In connectionLost of webclient
+2018-04-06 14:22:34-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 14:22:34-0500 [-] In connectionLost of webclient
+2018-04-06 14:22:34-0500 [-] In connectionLost of webclient
+2018-04-06 14:22:43-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 17:04:40-0500 [WebSocketClient (WebSocketProtocol),4,172.58.201.231] Starting RFC 6455 conversation
+2018-04-06 17:05:06-0500 [-] In connectionLost of webclient
+2018-04-06 17:05:06-0500 [-] In connectionLost of webclient
+2018-04-06 17:21:37-0500 [-] In connectionLost of webclient
+2018-04-06 17:38:14-0500 [-] In connectionLost of webclient
+2018-04-06 17:48:14-0500 [WebSocketClient (WebSocketProtocol),5,172.58.201.231] Starting RFC 6455 conversation
+2018-04-06 18:08:53-0500 [WebSocketClient (WebSocketProtocol),6,172.58.201.231] Starting RFC 6455 conversation
+2018-04-06 18:08:53-0500 [-] In connectionLost of webclient
+2018-04-06 18:08:53-0500 [-] In connectionLost of webclient
+2018-04-06 18:08:59-0500 [-] In connectionLost of webclient
+2018-04-06 18:08:59-0500 [-] In connectionLost of webclient
+2018-04-06 20:10:11-0500 [WebSocketClient (WebSocketProtocol),7,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:13:21-0500 [WebSocketClient (WebSocketProtocol),8,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:13:29-0500 [WebSocketClient (WebSocketProtocol),9,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:23:11-0500 [-] Received SIGINT, shutting down.
+2018-04-06 20:23:11-0500 [-] (TCP Port 80 Closed)
+2018-04-06 20:23:11-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 20:23:11-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 20:23:11-0500 [-] In connectionLost of webclient
+2018-04-06 20:23:11-0500 [-] In connectionLost of webclient
+2018-04-06 20:23:11-0500 [-] In connectionLost of webclient
+2018-04-06 20:23:11-0500 [-] Main loop terminated.
+2018-04-06 20:23:11-0500 [-] Server Shut Down.
+2018-04-06 20:23:16-0500 [-] Log opened.
+2018-04-06 20:23:16-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 20:23:16-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 20:23:16-0500 [-] ServerFactory starting on 4000
+2018-04-06 20:23:16-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 20:23:16-0500 [-] Website starting on 80
+2018-04-06 20:23:17-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55836) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 20:23:24-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:23:29-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [::] None
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] ]
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [::] None
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] ]
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [::] None
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] ]
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [::] None
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] ]
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [::] None
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] ]
+2018-04-06 20:23:34-0500 [HTTPChannelWithXForwardedFor,3,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 20:23:34-0500 [ProxyClient,client] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 578, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 525, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/proxy.py", line 87, in handleResponseEnd
+	    self.father.finish()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/server.py", line 224, in finish
+	    return http.Request.finish(self)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 865, in finish
+	    "Request.finish called on a request after its connection was lost; "
+	exceptions.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+2018-04-06 20:23:34-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:29:13-0500 [-] Received SIGINT, shutting down.
+2018-04-06 20:29:13-0500 [-] (TCP Port 80 Closed)
+2018-04-06 20:29:13-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 20:29:13-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 20:29:13-0500 [-] In connectionLost of webclient
+2018-04-06 20:29:13-0500 [-] In connectionLost of webclient
+2018-04-06 20:29:13-0500 [-] In connectionLost of webclient
+2018-04-06 20:29:13-0500 [-] Main loop terminated.
+2018-04-06 20:29:13-0500 [-] Server Shut Down.
+2018-04-06 20:29:18-0500 [-] Log opened.
+2018-04-06 20:29:18-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 20:29:18-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 20:29:18-0500 [-] ServerFactory starting on 4000
+2018-04-06 20:29:18-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 20:29:18-0500 [-] Website starting on 80
+2018-04-06 20:29:19-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55850) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 20:29:25-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:29:28-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:29:32-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:34:26-0500 [-] Received SIGINT, shutting down.
+2018-04-06 20:34:26-0500 [-] (TCP Port 80 Closed)
+2018-04-06 20:34:26-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 20:34:26-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 20:34:26-0500 [-] In connectionLost of webclient
+2018-04-06 20:34:26-0500 [-] In connectionLost of webclient
+2018-04-06 20:34:26-0500 [-] In connectionLost of webclient
+2018-04-06 20:34:26-0500 [-] Main loop terminated.
+2018-04-06 20:34:26-0500 [-] Server Shut Down.
+2018-04-06 20:34:32-0500 [-] Log opened.
+2018-04-06 20:34:32-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 20:34:32-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 20:34:32-0500 [-] ServerFactory starting on 4000
+2018-04-06 20:34:32-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 20:34:32-0500 [-] Website starting on 80
+2018-04-06 20:34:34-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 55862) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 20:34:42-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:34:46-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 20:34:49-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 21:52:10-0500 [WebSocketClient (WebSocketProtocol),3,98.217.83.188] Starting RFC 6455 conversation
+2018-04-06 22:11:58-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 56008) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 22:13:31-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 56012) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 22:16:22-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 56016) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 22:19:02-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 56020) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 22:21:08-0500 [-] In connectionLost of webclient
+2018-04-06 22:21:08-0500 [-] In connectionLost of webclient
+2018-04-06 22:21:08-0500 [WebSocketClient (WebSocketProtocol),4,98.217.83.188] Starting RFC 6455 conversation
+2018-04-06 22:21:15-0500 [-] In connectionLost of webclient
+2018-04-06 22:21:15-0500 [WebSocketClient (WebSocketProtocol),4,98.217.83.188] Closing connection: '' (1001)
+2018-04-06 22:21:15-0500 [-] In connectionLost of webclient
+2018-04-06 22:21:15-0500 [WebSocketClient (WebSocketProtocol),5,98.217.83.188] Starting RFC 6455 conversation
+2018-04-06 22:21:49-0500 [-] Received SIGINT, shutting down.
+2018-04-06 22:21:49-0500 [-] (TCP Port 80 Closed)
+2018-04-06 22:21:49-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 22:21:49-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 22:21:49-0500 [-] In connectionLost of webclient
+2018-04-06 22:21:49-0500 [-] In connectionLost of webclient
+2018-04-06 22:21:49-0500 [-] In connectionLost of webclient
+2018-04-06 22:21:49-0500 [-] In connectionLost of webclient
+2018-04-06 22:21:49-0500 [-] Main loop terminated.
+2018-04-06 22:21:49-0500 [-] Server Shut Down.
+2018-04-06 22:21:53-0500 [-] Log opened.
+2018-04-06 22:21:53-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 22:21:53-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 22:21:53-0500 [-] ServerFactory starting on 4000
+2018-04-06 22:21:53-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 22:21:53-0500 [-] Website starting on 80
+2018-04-06 22:21:55-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 56030) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [::] None
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] ]
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [::] None
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] ]
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [::] None
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] ]
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [::] None
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] ]
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [::] None
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] ]
+2018-04-06 22:22:03-0500 [HTTPChannelWithXForwardedFor,0,174.101.174.61] [EE] Caught errback in webserver.py:75.
+2018-04-06 22:22:03-0500 [ProxyClient,client] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/log.py", line 84, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 209, in doRead
+	    return self._dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 215, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 578, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 525, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/proxy.py", line 87, in handleResponseEnd
+	    self.father.finish()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/server.py", line 224, in finish
+	    return http.Request.finish(self)
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/web/http.py", line 865, in finish
+	    "Request.finish called on a request after its connection was lost; "
+	exceptions.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+2018-04-06 22:22:03-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 22:23:02-0500 [-] Received SIGINT, shutting down.
+2018-04-06 22:23:02-0500 [-] (TCP Port 80 Closed)
+2018-04-06 22:23:02-0500 [-] (TCP Port 8308 Closed)
+2018-04-06 22:23:02-0500 [-] (TCP Port 4000 Closed)
+2018-04-06 22:23:02-0500 [-] In connectionLost of webclient
+2018-04-06 22:23:02-0500 [-] Main loop terminated.
+2018-04-06 22:23:02-0500 [-] Server Shut Down.
+2018-04-06 22:23:06-0500 [-] Log opened.
+2018-04-06 22:23:06-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-06 22:23:06-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-06 22:23:06-0500 [-] ServerFactory starting on 4000
+2018-04-06 22:23:06-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-06 22:23:06-0500 [-] Website starting on 80
+2018-04-06 22:23:08-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 56040) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-06 22:23:16-0500 [WebSocketClient (WebSocketProtocol),0,98.217.83.188] Starting RFC 6455 conversation
+2018-04-06 22:23:18-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 22:23:40-0500 [WebSocketClient (WebSocketProtocol),2,98.217.83.188] Starting RFC 6455 conversation
+2018-04-06 22:23:40-0500 [-] In connectionLost of webclient
+2018-04-06 22:23:40-0500 [-] In connectionLost of webclient
+2018-04-06 22:23:47-0500 [-] In connectionLost of webclient
+2018-04-06 22:23:47-0500 [-] In connectionLost of webclient
+2018-04-06 22:23:54-0500 [WebSocketClient (WebSocketProtocol),3,98.217.83.188] Starting RFC 6455 conversation
+2018-04-06 22:35:04-0500 [WebSocketClient (WebSocketProtocol),4,174.101.174.61] Starting RFC 6455 conversation
+2018-04-06 23:39:58-0500 [WebSocketClient (WebSocketProtocol),5,220.253.69.143] Starting RFC 6455 conversation
+2018-04-06 23:41:03-0500 [-] In connectionLost of webclient
+2018-04-06 23:41:03-0500 [-] In connectionLost of webclient
+2018-04-06 23:42:36-0500 [-] In connectionLost of webclient
+2018-04-06 23:42:36-0500 [-] In connectionLost of webclient
+2018-04-07 00:03:51-0500 [-] Received SIGINT, shutting down.
+2018-04-07 00:03:51-0500 [-] (TCP Port 80 Closed)
+2018-04-07 00:03:51-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 00:03:51-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 00:03:51-0500 [-] In connectionLost of webclient
+2018-04-07 00:03:51-0500 [-] In connectionLost of webclient
+2018-04-07 00:03:51-0500 [-] Main loop terminated.
+2018-04-07 00:03:51-0500 [-] Server Shut Down.
+2018-04-07 00:03:57-0500 [-] Log opened.
+2018-04-07 00:03:57-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:03:57-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:03:57-0500 [-] ServerFactory starting on 4000
+2018-04-07 00:03:57-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 00:03:57-0500 [-] Website starting on 80
+2018-04-07 00:03:58-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 56264) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 00:04:07-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:04:36-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Closing connection: '' (1001)
+2018-04-07 00:04:36-0500 [-] In connectionLost of webclient
+2018-04-07 00:04:36-0500 [AMPProtocol,client] [EE] AMP Error for AdminPortal2Server: global name 'message' is not defined
+2018-04-07 00:04:37-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:04:37-0500 [AMPProtocol,client] [EE] AMP Error for AdminPortal2Server: global name 'message' is not defined
+2018-04-07 00:04:47-0500 [-] In connectionLost of webclient
+2018-04-07 00:04:47-0500 [-] In connectionLost of webclient
+2018-04-07 00:05:21-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:05:43-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:06:17-0500 [WebSocketClient (WebSocketProtocol),4,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:06:17-0500 [-] In connectionLost of webclient
+2018-04-07 00:06:17-0500 [-] In connectionLost of webclient
+2018-04-07 00:08:14-0500 [-] Received SIGINT, shutting down.
+2018-04-07 00:08:14-0500 [-] (TCP Port 80 Closed)
+2018-04-07 00:08:14-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 00:08:14-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 00:08:14-0500 [-] In connectionLost of webclient
+2018-04-07 00:08:14-0500 [-] In connectionLost of webclient
+2018-04-07 00:08:14-0500 [-] Main loop terminated.
+2018-04-07 00:08:14-0500 [-] Server Shut Down.
+2018-04-07 00:08:42-0500 [-] Log opened.
+2018-04-07 00:08:42-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:08:42-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:08:42-0500 [-] ServerFactory starting on 4000
+2018-04-07 00:08:42-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 00:08:42-0500 [-] Website starting on 80
+2018-04-07 00:08:42-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 56346) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 00:08:54-0500 [-] Received SIGINT, shutting down.
+2018-04-07 00:08:54-0500 [-] (TCP Port 80 Closed)
+2018-04-07 00:08:54-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 00:08:54-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 00:08:54-0500 [-] Main loop terminated.
+2018-04-07 00:08:54-0500 [-] Server Shut Down.
+2018-04-07 00:15:05-0500 [-] Log opened.
+2018-04-07 00:15:05-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:15:05-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:15:05-0500 [-] ServerFactory starting on 4000
+2018-04-07 00:15:05-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 00:15:05-0500 [-] Website starting on 80
+2018-04-07 00:15:06-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 44260) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 00:16:01-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:16:20-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:20:05-0500 [-] Received SIGINT, shutting down.
+2018-04-07 00:20:05-0500 [-] (TCP Port 80 Closed)
+2018-04-07 00:20:05-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 00:20:05-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 00:20:05-0500 [-] In connectionLost of webclient
+2018-04-07 00:20:05-0500 [-] In connectionLost of webclient
+2018-04-07 00:20:05-0500 [-] Main loop terminated.
+2018-04-07 00:20:05-0500 [-] Server Shut Down.
+2018-04-07 00:25:35-0500 [-] Log opened.
+2018-04-07 00:25:35-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:25:35-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:25:35-0500 [-] ServerFactory starting on 4000
+2018-04-07 00:25:35-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 00:25:35-0500 [-] Website starting on 80
+2018-04-07 00:25:35-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 44280) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 00:25:41-0500 [-] Received SIGINT, shutting down.
+2018-04-07 00:25:41-0500 [-] (TCP Port 80 Closed)
+2018-04-07 00:25:41-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 00:25:41-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 00:25:41-0500 [-] Main loop terminated.
+2018-04-07 00:25:41-0500 [-] Server Shut Down.
+2018-04-07 00:36:26-0500 [-] Log opened.
+2018-04-07 00:36:26-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:36:26-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:36:26-0500 [-] ServerFactory starting on 4000
+2018-04-07 00:36:26-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 00:36:26-0500 [-] Website starting on 80
+2018-04-07 00:36:47-0500 [-] Received SIGINT, shutting down.
+2018-04-07 00:36:47-0500 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 847, in runUntilCurrent
+	    self.fireSystemEvent("shutdown")
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 640, in fireSystemEvent
+	    event.fireEvent()
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 411, in fireEvent
+	    result = callable(*args, **kwargs)
+	  File "/root/mud/evennia/evennia/server/portal/portal.py", line 153, in shutdown
+	    self.sessions.disconnect_all()
+	  File "/root/mud/evennia/evennia/server/portal/portalsessionhandler.py", line 197, in disconnect_all
+	    self.portal.amp_protocol.send_AdminPortal2Server(DUMMYSESSION,
+	exceptions.AttributeError: 'NoneType' object has no attribute 'send_AdminPortal2Server'
+	
+2018-04-07 00:36:47-0500 [-] (TCP Port 80 Closed)
+2018-04-07 00:36:47-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 00:36:47-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 00:36:47-0500 [-] Main loop terminated.
+2018-04-07 00:36:47-0500 [-] Server Shut Down.
+2018-04-07 00:37:06-0500 [-] Log opened.
+2018-04-07 00:37:06-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:37:06-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:37:06-0500 [-] ServerFactory starting on 4000
+2018-04-07 00:37:06-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 00:37:06-0500 [-] Website starting on 80
+2018-04-07 00:37:08-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 53422) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 00:37:22-0500 [-] Received SIGINT, shutting down.
+2018-04-07 00:37:22-0500 [-] (TCP Port 80 Closed)
+2018-04-07 00:37:22-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 00:37:22-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 00:37:22-0500 [-] Main loop terminated.
+2018-04-07 00:37:22-0500 [-] Server Shut Down.
+2018-04-07 00:44:00-0500 [-] Log opened.
+2018-04-07 00:44:00-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:44:00-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:44:00-0500 [-] ServerFactory starting on 4000
+2018-04-07 00:44:00-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 00:44:00-0500 [-] Website starting on 80
+2018-04-07 00:44:01-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 53428) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 00:44:12-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:44:19-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:50:23-0500 [-] Received SIGINT, shutting down.
+2018-04-07 00:50:23-0500 [-] (TCP Port 80 Closed)
+2018-04-07 00:50:23-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 00:50:23-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 00:50:23-0500 [-] In connectionLost of webclient
+2018-04-07 00:50:23-0500 [-] In connectionLost of webclient
+2018-04-07 00:50:23-0500 [-] Main loop terminated.
+2018-04-07 00:50:23-0500 [-] Server Shut Down.
+2018-04-07 00:52:25-0500 [-] Log opened.
+2018-04-07 00:52:25-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:52:25-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:52:25-0500 [-] ServerFactory starting on 4000
+2018-04-07 00:52:25-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 00:52:25-0500 [-] Website starting on 80
+2018-04-07 00:53:00-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 52850) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 00:53:33-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 52862) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 00:54:13-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:54:29-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 00:58:33-0500 [-] Received SIGTERM, shutting down.
+2018-04-07 00:58:33-0500 [-] (TCP Port 80 Closed)
+2018-04-07 00:58:33-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 00:58:33-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 00:58:33-0500 [-] In connectionLost of webclient
+2018-04-07 00:58:33-0500 [-] In connectionLost of webclient
+ed/scripts/twistd.py", line 25, in runApp
+2018-04-07 00:52:54-0500 [-]     _SomeApplicationRunner(config).run()
+2018-04-07 00:52:54-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/app.py", line 352, in run
+2018-04-07 00:52:54-0500 [-]     self.postApplication()
+2018-04-07 00:52:54-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/_twistd_unix.py", line 207, in postApplication
+2018-04-07 00:52:54-0500 [-]     self.startApplication(self.application)
+2018-04-07 00:52:54-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/_twistd_unix.py", line 394, in startApplication
+2018-04-07 00:52:54-0500 [-]     service.IService(application).privilegedStartService()
+2018-04-07 00:52:54-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/service.py", line 278, in privilegedStartService
+2018-04-07 00:52:54-0500 [-]     service.privilegedStartService()
+2018-04-07 00:52:54-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/internet.py", line 106, in privilegedStartService
+2018-04-07 00:52:54-0500 [-]     self._port = self._getPort()
+2018-04-07 00:52:54-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/internet.py", line 134, in _getPort
+2018-04-07 00:52:54-0500 [-]     'listen%s' % (self.method,))(*self.args, **self.kwargs)
+2018-04-07 00:52:54-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 478, in listenTCP
+2018-04-07 00:52:54-0500 [-]     p.startListening()
+2018-04-07 00:52:54-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 984, in startListening
+2018-04-07 00:52:54-0500 [-]     raise CannotListenError(self.interface, self.port, le)
+2018-04-07 00:52:54-0500 [-] twisted.internet.error.CannotListenError: Couldn't listen on 0.0.0.0:4000: [Errno 98] Address already in use.
+2018-04-07 00:53:30-0500 [-] Log opened.
+2018-04-07 00:53:30-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:53:30-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:53:30-0500 [-] Traceback (most recent call last):
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/bin/twistd", line 18, in <module>
+2018-04-07 00:53:30-0500 [-]     run()
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/twistd.py", line 29, in run
+2018-04-07 00:53:30-0500 [-]     app.run(runApp, ServerOptions)
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/app.py", line 617, in run
+2018-04-07 00:53:30-0500 [-]     runApp(config)
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/twistd.py", line 25, in runApp
+2018-04-07 00:53:30-0500 [-]     _SomeApplicationRunner(config).run()
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/app.py", line 352, in run
+2018-04-07 00:53:30-0500 [-]     self.postApplication()
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/_twistd_unix.py", line 207, in postApplication
+2018-04-07 00:53:30-0500 [-]     self.startApplication(self.application)
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/_twistd_unix.py", line 394, in startApplication
+2018-04-07 00:53:30-0500 [-]     service.IService(application).privilegedStartService()
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/service.py", line 278, in privilegedStartService
+2018-04-07 00:53:30-0500 [-]     service.privilegedStartService()
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/internet.py", line 106, in privilegedStartService
+2018-04-07 00:53:30-0500 [-]     self._port = self._getPort()
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/internet.py", line 134, in _getPort
+2018-04-07 00:53:30-0500 [-]     'listen%s' % (self.method,))(*self.args, **self.kwargs)
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 478, in listenTCP
+2018-04-07 00:53:30-0500 [-]     p.startListening()
+2018-04-07 00:53:30-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 984, in startListening
+2018-04-07 00:53:30-0500 [-]     raise CannotListenError(self.interface, self.port, le)
+2018-04-07 00:53:30-0500 [-] twisted.internet.error.CannotListenError: Couldn't listen on 0.0.0.0:4000: [Errno 98] Address already in use.
+2018-04-07 00:57:58-0500 [-] Log opened.
+2018-04-07 00:57:58-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 00:57:58-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 00:57:58-0500 [-] Traceback (most recent call last):
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/bin/twistd", line 18, in <module>
+2018-04-07 00:57:58-0500 [-]     run()
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/twistd.py", line 29, in run
+2018-04-07 00:57:58-0500 [-]     app.run(runApp, ServerOptions)
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/app.py", line 617, in run
+2018-04-07 00:57:58-0500 [-]     runApp(config)
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/twistd.py", line 25, in runApp
+2018-04-07 00:57:58-0500 [-]     _SomeApplicationRunner(config).run()
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/app.py", line 352, in run
+2018-04-07 00:57:58-0500 [-]     self.postApplication()
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/_twistd_unix.py", line 207, in postApplication
+2018-04-07 00:57:58-0500 [-]     self.startApplication(self.application)
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/scripts/_twistd_unix.py", line 394, in startApplication
+2018-04-07 00:57:58-0500 [-]     service.IService(application).privilegedStartService()
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/service.py", line 278, in privilegedStartService
+2018-04-07 00:57:58-0500 [-]     service.privilegedStartService()
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/internet.py", line 106, in privilegedStartService
+2018-04-07 00:57:58-0500 [-]     self._port = self._getPort()
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/application/internet.py", line 134, in _getPort
+2018-04-07 00:57:58-0500 [-]     'listen%s' % (self.method,))(*self.args, **self.kwargs)
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 478, in listenTCP
+2018-04-07 00:57:58-0500 [-]     p.startListening()
+2018-04-07 00:57:58-0500 [-]   File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 984, in startListening
+2018-04-07 00:57:58-0500 [-]     raise CannotListenError(self.interface, self.port, le)
+2018-04-07 00:57:58-0500 [-] twisted.internet.error.CannotListenError: Couldn't listen on 0.0.0.0:4000: [Errno 98] Address already in use.
+2018-04-07 01:00:25-0500 [-] Log opened.
+2018-04-07 01:00:25-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 01:00:25-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 01:00:25-0500 [-] ServerFactory starting on 4000
+2018-04-07 01:00:25-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 01:00:25-0500 [-] Website starting on 80
+2018-04-07 01:00:35-0500 [-] Received SIGINT, shutting down.
+2018-04-07 01:00:35-0500 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1194, in run
+	    self.mainLoop()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1203, in mainLoop
+	    self.runUntilCurrent()
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 847, in runUntilCurrent
+	    self.fireSystemEvent("shutdown")
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 640, in fireSystemEvent
+	    event.fireEvent()
+	--- <exception caught here> ---
+	  File "/root/mud/pyenv/local/lib/python2.7/site-packages/twisted/internet/base.py", line 411, in fireEvent
+	    result = callable(*args, **kwargs)
+	  File "/root/mud/evennia/evennia/server/portal/portal.py", line 153, in shutdown
+	    self.sessions.disconnect_all()
+	  File "/root/mud/evennia/evennia/server/portal/portalsessionhandler.py", line 197, in disconnect_all
+	    self.portal.amp_protocol.send_AdminPortal2Server(DUMMYSESSION,
+	exceptions.AttributeError: 'NoneType' object has no attribute 'send_AdminPortal2Server'
+	
+2018-04-07 01:00:35-0500 [-] (TCP Port 80 Closed)
+2018-04-07 01:00:35-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 01:00:35-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 01:00:35-0500 [-] Main loop terminated.
+2018-04-07 01:00:35-0500 [-] Server Shut Down.
+2018-04-07 01:00:51-0500 [-] Log opened.
+2018-04-07 01:00:51-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 01:00:51-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 01:00:51-0500 [-] ServerFactory starting on 4000
+2018-04-07 01:00:51-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 01:00:51-0500 [-] Website starting on 80
+2018-04-07 01:00:53-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 58878) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 01:01:06-0500 [-] Received SIGINT, shutting down.
+2018-04-07 01:01:06-0500 [-] (TCP Port 80 Closed)
+2018-04-07 01:01:06-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 01:01:06-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 01:01:06-0500 [-] Main loop terminated.
+2018-04-07 01:01:06-0500 [-] Server Shut Down.
+2018-04-07 01:01:13-0500 [-] Log opened.
+2018-04-07 01:01:13-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 01:01:13-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 01:01:13-0500 [-] ServerFactory starting on 4000
+2018-04-07 01:01:13-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 01:01:13-0500 [-] Website starting on 80
+2018-04-07 01:01:14-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 58884) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 01:01:24-0500 [WebSocketClient (WebSocketProtocol),0,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 01:01:32-0500 [WebSocketClient (WebSocketProtocol),1,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 01:02:13-0500 [-] In connectionLost of webclient
+2018-04-07 01:02:13-0500 [-] In connectionLost of webclient
+2018-04-07 01:02:27-0500 [WebSocketClient (WebSocketProtocol),2,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 01:02:43-0500 [-] In connectionLost of webclient
+2018-04-07 01:02:43-0500 [-] In connectionLost of webclient
+2018-04-07 01:06:35-0500 [WebSocketClient (WebSocketProtocol),3,174.101.174.61] Starting RFC 6455 conversation
+2018-04-07 02:24:30-0500 [-] Log opened.
+2018-04-07 02:24:30-0500 [-] twistd 16.0.0 (/root/mud/pyenv/bin/python2 2.7.13) starting up.
+2018-04-07 02:24:30-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2018-04-07 02:24:30-0500 [-] ServerFactory starting on 4000
+2018-04-07 02:24:30-0500 [-] ServerFactory (WebSocketFactory) starting on 8308
+2018-04-07 02:24:30-0500 [-] Website starting on 80
+2018-04-07 02:24:31-0500 [Uninitialized] AMPProtocol connection established (HOST:IPv4Address(TCP, '127.0.0.1', 59144) PEER:IPv4Address(TCP, '127.0.0.1', 9999))
+2018-04-07 02:24:39-0500 [-] Received SIGINT, shutting down.
+2018-04-07 02:24:39-0500 [-] (TCP Port 80 Closed)
+2018-04-07 02:24:39-0500 [-] (TCP Port 8308 Closed)
+2018-04-07 02:24:39-0500 [-] (TCP Port 4000 Closed)
+2018-04-07 02:24:39-0500 [-] Main loop terminated.
+2018-04-07 02:24:39-0500 [-] Server Shut Down.
